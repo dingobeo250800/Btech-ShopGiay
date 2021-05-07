@@ -17,34 +17,57 @@
     <!-- FonAwesomee -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
         integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.css">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="./css.css">
     <title>NiLing Shop</title>
+
 </head>
 
 <body>
     <header>
-        <div class="container header-top d-flex">
-            <div class="col-5">
-                <img src="./img/logo1.jpg" alt="">
-                <input type="text" placeholder="Tìm kiếm...">
-            </div>
-            <div class="col-7 d-flex">
-                <div class="col-4 header-top-icon d-flex align-items-center">
-                    <div><i class="fas fa-phone"></i></div>
-                    <span class="numberPhone">0918401585 (08:00-17:30) </span>
+        <!-- banner-x -->
+        <div class="banner-x" id="info">
+            <div class="container header-top d-flex">
+                <div class="col-5">
+                    <img src="./img/logo1.jpg" alt="">
+                    <input type="text" placeholder="Tìm kiếm...">
                 </div>
-                <div class="col-4 header-top-icon d-flex align-items-center">
-                    <div><i class="fas fa-map-marker-alt"></i></div>
-                    <span>Hệ thống cửa hàng </span>
-                </div>
-                <div class="col-4 header-top-icon d-flex align-items-center">
-                    <div class="icon-shoping"><i class="fas fa-shopping-bag"></i></div>
-                    <span> 3 Sản phẩm đã mua</span>
+                <div class="col-7 d-flex">
+                    <div class="col-4 header-top-icon d-flex align-items-center">
+                        <div><i class="fas fa-phone"></i></div>
+                        <span class="numberPhone">0918401585 (08:00-17:30) </span>
+                    </div>
+                    <div class="col-4 header-top-icon d-flex align-items-center">
+                        <div><i class="fas fa-map-marker-alt"></i></div>
+                        <span>Hệ thống cửa hàng </span>
+                    </div>
+                    <div class="col-4 header-top-icon d-flex align-items-center">
+                        <div class="icon-shoping"><i class="fas fa-shopping-bag"></i></div>
+                        <span> 3 Sản phẩm đã mua</span>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="wrapper">
-            <div class=" container header-navbar">
+        <!-- banner-y -->
+        <div class="banner-y" style="display: none;">
+            <div class="container header-top-y d-flex justify-content-between align-items-center">
+                <div class="menuSidebar" onclick="w3_open()">
+                    <span>Menu</span>
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="imgLogo">
+                    <img src="./img/lgChuan.png" alt="">
+                </div>
+                <div class="menuSidebar">
+                    <i class="fas fa-shopping-bag"></i>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!-- header-navbar -->
+        <div class="container-fluid wrapper px-0" id="onscroll-Event">
+            <div class=" container header-navbar" >
                 <ul class="header-navbar_ul d-flex">
                     <li>
                         <a href="#">
@@ -113,14 +136,53 @@
                 </ul>
             </div>
         </div>
+        <!-- sideBar -->
+        <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+            <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+            <a href="#" class="w3-bar-item w3-button">Link 1</a>
+            <a href="#" class="w3-bar-item w3-button">Link 2</a>
+            <a href="#" class="w3-bar-item w3-button">Link 3</a>
+        </div>
     </header>
     <main>
-
+        <!-- Set up your HTML -->
+        <!-- <div class="owl-carousel">
+            <div style="width: 20px; height: 20px; background-color: red;"> Your Content </div>
+            <div> Your Content </div>
+            <div> Your Content </div>
+            <div> Your Content </div>
+            <div> Your Content </div>
+            <div> Your Content </div>
+            <div> Your Content </div>
+        </div> -->
     </main>
     <footer>
 
     </footer>
+    <!-- <script>
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+        }
+    </script> -->
+
 </body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="owlcarousel/owl.carousel.min.js"></script>
 <script src="./app.js"></script>
+
+<script>
+    $('.custom1').owlCarousel({
+        animateOut: 'slideOutDown',
+        animateIn: 'flipInX',
+        items: 1,
+        margin: 30,
+        stagePadding: 30,
+        smartSpeed: 450
+    });
+</script>
 
 </html>

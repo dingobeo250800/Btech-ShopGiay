@@ -5,6 +5,7 @@
 }
 body{
     font-family: sans-serif;
+    height: 1500px;
 }
 /*------------------------------------------- header-top */
 .header-top{
@@ -50,6 +51,18 @@ padding: 10px 0;
 }
 .header-top .header-top-icon span:hover{
     text-decoration: underline;
+}
+/*---------------------------------------- banner-X */
+.banner-y{
+    background-color: #000;
+}
+.banner-y .header-top-y img {
+    width: 150px;
+    height: 58px;
+}
+.banner-y .header-top-y .menuSidebar{
+    color: #f7f7f7;
+    margin: 0 14px;
 }
 /*---------------------------------------- navbar */
 .wrapper{
