@@ -116,3 +116,27 @@ padding: 0;
     color: red;
     text-decoration: underline;
 }
+/* .img-fluid{
+    width: 100%;
+} */
+.slideShow .owl-carousel .item .img-fluid{
+    width: 100%;
+}
+.main-Conten .category {
+    border: 1px solid;
+}
+.main-Conten .category .category-active .active-panel-div{
+    background-color: #b1b1b1;
+    width: 100%;
+    height: 35px;
+    padding: 0 15px;
+    line-height: 35px;
+    color: white;
+}
+.main-Conten .category .category-active .active-panel{
+    border-bottom: 1px solid;
+    margin-bottom: 20px;
+}
+.main-Conten .category .category-active .active-panel .active-panel-p{
+    margin: 0 10px;
+}
