@@ -193,8 +193,8 @@
                             2,390,000₫
                         </div>
                         <div class="product-describe">
+                            <p>Giày chạy bộ thể thao nam Li-Ning ARHR041-3</p>
                             <ul>
-                                <p>Giày chạy bộ thể thao nam Li-Ning ARHR041-3</p>
                                 <li>Thiết kế chuyên dụng, hỗ trợ tối ưu các hoạt động tập luyện thể thao</li>
                                 <li>Vải lưới cao cấp, có độ bền cao, có hệ thống lỗ thoát khí</li>
                                 <li>Công nghệ khử mùi, thoáng khí</li>
@@ -204,7 +204,11 @@
                         <div class="product-color">
                             <p>Màu Sắc</p>
                             <div class="product-color-bgr">
-                                <div class="bgr-img"></div>
+                                <label class="bgr-img">
+                                    <span>Đen</span>
+                                    <img src="./icon/iconv.jpg" alt="">
+                                </label>
+                                
                             </div>
                         </div>
                     </div>
@@ -223,16 +227,29 @@
     let productImg = document.getElementById("product-img");
     let smallImg = document.getElementsByClassName("small-img");
     smallImg[0].onclick = function () {
+         // mỗi lần click thì xóa len của cái cũ đi
+        deleteImageZoom();
         productImg.src = smallImg[0].src;
+        //lấy cái id ảnh của mình truyền vào
+        imageZoom("product-img", "myresult");
     }
     smallImg[1].onclick = function () {
+        // mỗi lần click thì xóa len của cái cũ đi
+        deleteImageZoom();
         productImg.src = smallImg[1].src;
+        imageZoom("product-img", "myresult");
     }
     smallImg[2].onclick = function () {
+        // mỗi lần click thì xóa len của cái cũ đi
+        deleteImageZoom();
         productImg.src = smallImg[2].src;
+        imageZoom("product-img", "myresult");
     }
     smallImg[3].onclick = function () {
+        // mỗi lần click thì xóa len của cái cũ đi
+        deleteImageZoom();
         productImg.src = smallImg[3].src;
+        imageZoom("product-img", "myresult");
     }
 </script>
 <script>
@@ -290,6 +307,13 @@
             y = y - window.pageYOffset;
             return { x: x, y: y };
         }
+        
+    }
+    //code xoá phần lens cũ 
+    function deleteImageZoom(){
+       let len = document.querySelector(".img-zoom-lens");
+       len.remove();
+       console.log(len);
     }
 </script>
 <script>
