@@ -140,3 +140,47 @@ padding: 0;
 .main-Conten .category .category-active .active-panel .active-panel-p{
     margin: 0 10px;
 }
+/*---------------------------------------------------- product */
+.product-all {
+    border: 1px solid #b1b1b1;
+    margin: 15px auto;
+}
+.product-all .img-shoes{
+    position: relative;
+    overflow: hidden;
+    border-bottom: 1px solid #b1b1b1;
+}
+.product-all .img-shoes .shoes-product{
+    display: block;
+    width: 100%;
+}
+.product-all .img-shoes .product-detail{
+    position: absolute;
+    bottom: 4%;
+    left: -100%;
+    width: 100%;
+    height: 35px;
+    background-color: rgb(223, 32, 32);
+    transition: .5s;
+    line-height: 35px;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 1px 1px #000"
+
+}
+.product-all .img-shoes:hover .product-detail{
+    left: -5%;
+}
+.product-all .title-shoes{
+    padding: 0 13px;
+}
+.product-all .title-shoes p{
+    margin: 0 auto;
+    font-weight: 600;
+}
+.product-all .title-shoes:hover p{
+    text-decoration: underline;
+}
+.product-all .title-shoes .shoes-pice{
+    color:red ;
+}
