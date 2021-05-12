@@ -75,6 +75,7 @@ padding: 0;
     margin: 0; 
     padding: 5px 0;
     background: #f7f7f7;
+    position: relative;
      
 }
 .wrapper .header-navbar ul li {
@@ -83,6 +84,7 @@ padding: 0;
     width: calc(100%/9);/* chia cho 9 phần */
     border-right: 1px dashed #ccc;
     display: block;
+    
 }
 .wrapper .header-navbar ul li:last-child{
     border-right:none ;
@@ -140,6 +142,98 @@ padding: 0;
 .main-Conten .category .category-active .active-panel .active-panel-p{
     margin: 0 10px;
 }
+/* aside */
+.main-Conten .table-option {
+  border: 1px solid #e6e6e6;
+  margin-bottom: 48px;
+}
+.table-option .collapse{
+display: none;
+}
+
+.table-option .table-option__title{
+background-color: #333333;
+color: #fff;
+text-align: left;
+font-weight: bold;
+font-size: 18px;
+text-transform: uppercase;
+padding: 12px;
+cursor: pointer;
+}
+/* Dấu trừ */
+.table-option .table-collapse{
+position: relative;
+}
+
+.table-option .table-collapse::after{
+content: "";
+position: absolute;
+top: calc(50% - 2px);
+right: 11.4px;
+background-color: #fff;
+display: inline-block;
+width: 0px;
+padding: 2px 10px;
+border-radius: 5px;
+}
+
+/* Dấu cộng */
+.table-option .table-expand{
+position: relative;
+}
+
+.table-option .table-expand::after{
+content: "";
+position: absolute;
+top: calc(50% - 2px);
+right:11.3px;
+background-color: #fff;
+display: inline-block;
+width: 0px;
+padding: 2px 8px;
+border-radius: 5px;
+}
+.table-option .table-expand::before{
+content: "";
+position: absolute;
+top: calc(50% - 7.8px);
+right:17px;
+background-color: #fff;
+display: inline-block;
+width: 0px;
+padding: 8px 2px;
+border-radius: 5px;
+}
+
+/* Bảng thông tin */
+.table-option .table-option__filter-table{
+  padding: 20px 16px 32px;
+}
+.table-option .table-option__filter-table .filter-table-list{
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+.table-option__filter-table .filter-table-list .filter-table-item{
+  margin-bottom: 8px;
+}
+
+.table-option__filter-table .filter-table-list .filter-table-item span{
+font-weight: bold;
+margin: 0 8px 0 4px;
+font-size: 14px;
+}
+.form-check-input[type=radio]{
+border-radius: 4px;
+}
+.form-check-input[type=radio]:checked{
+background:url("./icon/check.png") no-repeat;
+background-position:  center;
+background-size: 70% 100%;
+outline: none;
+box-shadow: none;
+}
 /*---------------------------------------------------- product */
 .product-all {
     border: 1px solid #b1b1b1;
@@ -186,8 +280,133 @@ padding: 0;
 }
 
 
+.wrapper .header-navbar ul li:hover .type-product-list-1
+{
+  display: block;
+}
+
+/* dropdown */
+.header-navbar_ul li:nth-child(5),
+.header-navbar_ul li:nth-child(8){
+  position: relative;
+}
+
+.header-navbar_ul li:nth-child(5):hover .type-product-list-1,
+.header-navbar_ul li:nth-child(8):hover .type-product-list-1{
+  top: 100%;
+}
+
+.header-navbar_ul li .type-product-list-1{
+  display: none;
+  list-style-type: none;
+  width: 200px;
+  background: #fff;
+
+  font-size: 14px;
+
+  position: absolute;
+  top: calc(100% - 5px);
+  left: 0;
+  z-index: 10;
+
+  -moz-box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.35);
+    -webkit-box-shadow: 0 1px 7px 0 rgb(0 0 0 / 35%);
+
+    box-shadow: 0 1px 7px 0 rgb(0 0 0 / 35%);
+  border-radius: 3px;
+  overflow: hidden;
+  
+}
+.header-navbar_ul li .type-product-list-1 .type-product-item{
+  display: inline-block;
+  width: 100%;
+  padding: 8px 12px;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+}
+.header-navbar_ul li .type-product-list-1 .type-product-item a{
+  display: block;
+  color: #eb0c0c;
+  line-height: 20px;
+
+}
+.header-navbar_ul li .type-product-list-1 .type-product-item:hover,
+.type-product-list-2 .type-product-item .product-child-item:hover{
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.header-navbar_ul li .type-product-list-1 .type-product-item:hover a,
+.type-product-list-2 .type-product-item .product-child-item:hover a{
+  color: #000;
+  text-decoration: underline;
+}
+/* dropdown loại 2 */
+.wrapper .header-navbar ul li:hover .type-product-list-2{
+  display: flex;
+}
+.header-navbar_ul li .type-product-list-2{
+    display: none;
+   
+    margin: 0px;
+    width: 100%;
+    min-width: 800px;
+    font-size: 14px;
+
+    background: #ffffff;
+    -moz-box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.35);
+    -webkit-box-shadow: 0 1px 7px 0 rgb(0 0 0 / 35%);
+
+    box-shadow: 0 1px 7px 0 rgb(0 0 0 / 35%);
+    border-radius: 3px;
+
+    position: absolute;
+    right: 0;
+    top: calc(100% - 5px);
+    z-index: 10;
+}
+
+.header-navbar_ul li .type-product-list-2 .type-product-item{
+  border: none;
+  box-sizing: border-box;
+  padding-left: 16px;
+  flex-grow: 1;
+}
+.type-product-list-2 .type-product-item a,
+.type-product-list-2 .type-product-item li{
+  padding-left: 0;
+  margin-left:0 ;
+  text-align: left;
+}
+
+.type-product-list-2 .type-product-item>a{
+  color: #d61a0c;
+  font-weight: bold; 
+}
+
+
+.type-product-list-2 .type-product-item .product-child-list{
+list-style-type: none;
+background: #fff;
+
+}
+.type-product-item .product-child-list .product-child-item{
+  display: inline-block;
+  width: 100%;
+  padding: 8px 12px 8px 0px;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+ }
+
+ .type-product-item .product-child-list .product-child-item a{
+  display: block;
+  color: #eb0c0c;
+  line-height: 20px;
+ }
+
 /* ---------------------------------------Kho ảnh video */
 .album .section-title {
+  margin-top: 30px;
     position: relative;
     color: #333333;
     font-weight: bold;
@@ -424,4 +643,38 @@ padding: 0;
   }
   a:hover .icon .fab {
     transform: translateY(-20%);
+  }
+  /* -----------------------.row-Slide-1 */
+  .row-Slide-1 .product-3 {
+    position: relative;
+  }
+  .row-Slide-1 .product-3 .block-4{
+
+  }
+  .row-Slide-1 .product-3 .block-4 .btn-2{
+    height: 40px;
+    background-color: cadetblue;
+    border: 1px solid #b1b1b1;
+    text-align: center;
+    line-height: 40px;
+    color: white;
+    font-size: 20px;
+    text-shadow: 1px 1px 1px #000;
+  }
+  .row-Slide-1 .product-3 .block-4 .btn-3{
+    border: 1px solid #b1b1b1;
+    text-align: center;
+    height: 30px;
+    font-size: 16px;
+    line-height: 30px;
+    background-color: blanchedalmond;
+    text-shadow: 1px 1px 1px darkseagreen;
+  }
+  /*........................... row-Slide-1 */
+  .row-Slide-1 .product-3{
+    position: relative;
+    margin: 5px;
+  }
+  .row-Slide-1 .product-3 .img-fluid{
+    width: 315px;
   }

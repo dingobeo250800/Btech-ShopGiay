@@ -19,3 +19,30 @@ function myFunction(){
 window.onscroll = function(){
     myFunction();
 }
+
+const collapse = document.querySelectorAll(
+    ".table-option .table-option__title"
+  );
+  const filterTable = document.querySelectorAll(
+    ".table-option .table-option__filter-table"
+  );
+
+  for (let i = 0; i < collapse.length; i++) {
+    console.log(collapse[i]);
+    //   collapse[i].onclick = checkCollapse(i);
+    collapse[i].onclick = function () {
+      if (filterTable[i].classList.contains("collapse")) {
+        filterTable[i].classList.remove("collapse");
+        // thêm bớt class
+        collapse[i].classList.replace("table-expand", "table-collapse");
+        //   collapse[i].classList.add("table-collapse");
+      } else {
+        filterTable[i].classList.add("collapse");
+        // thêm bớt class
+        collapse[i].classList.replace("table-collapse", "table-expand");
+  
+        //   collapse[i].classList.add("table-expand");
+      }
+    };
+  }
+  
