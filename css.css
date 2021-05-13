@@ -678,3 +678,55 @@ background: #fff;
   .row-Slide-1 .product-3 .img-fluid{
     width: 315px;
   }
+  @media screen and (min-width: 1800px) {
+    .banner-x{
+      display: block;
+    }
+    .banner-y{
+      display: none;
+    }
+  }
+  @media screen and (max-width: 1800px) {
+    .banner-x{
+      display: block;
+    }
+    .banner-y{
+      display: none;
+    }
+    .header-navbar{
+      display: block;
+    }
+
+  }
+  @media screen and (max-width: 1100px) {
+    .banner-x{
+      display: none;
+    }
+    .banner-y{
+      display: block;
+    }
+    .header-navbar{
+      display: none;
+    }
+    .table-option-all{
+      display: flex;
+      flex-wrap: wrap;
+
+    }
+    .table-expand{
+      width: 200px;
+      height: 45px;
+    }
+
+    
+  }
+  @media screen and (max-width: 960px) {
+    .banner-x .header-top{
+      display: none;
+    }
+    .banner-y {
+      display: block;
+    }
+
+    
+  }
