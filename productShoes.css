@@ -124,7 +124,7 @@
     bottom: -0.5px;
 }
 /* product-size */
-.product-size{
+.product-size {
     margin: 10px 0 0 0;
 }
 .product-size .product-size_label {
@@ -168,10 +168,9 @@
     display: block;
 } */
 /* product-amount */
-.product-content .product-amount .amount{
-
+.product-content .product-amount .amount {
 }
-.product-amount .amount .amount-input{
+.product-amount .amount .amount-input {
     width: 70px;
     height: 37px;
     text-align: center;
@@ -180,35 +179,35 @@
     border-top: 1px solid #868686;
     border-bottom: 1px solid #868686;
 }
-.product-amount .amount .btn-amount-am{
+.product-amount .amount .btn-amount-am {
     width: 37px;
     height: 37px;
     position: relative;
     border: 1px solid #868686;
     background-color: white;
 }
-.product-amount .amount .btn-amount-am .amount-am{
+.product-amount .amount .btn-amount-am .amount-am {
     position: absolute;
     width: 16px;
     height: 16px;
     margin: -2px 0px 0px 9px;
     border-top: 3px solid black;
 }
-.product-amount .amount .btn-amount-duong{
+.product-amount .amount .btn-amount-duong {
     width: 37px;
     height: 37px;
     position: relative;
     border: 1px solid #868686;
     background-color: white;
 }
-.product-amount .amount .btn-amount-duong .amount-duong{
+.product-amount .amount .btn-amount-duong .amount-duong {
     position: absolute;
     width: 16px;
     height: 16px;
     margin: -2px 0px 0px 9px;
     border-top: 3px solid black;
 }
-.product-amount .amount .btn-amount-duong .amount-duong2{
+.product-amount .amount .btn-amount-duong .amount-duong2 {
     position: absolute;
     width: 16px;
     height: 16px;
@@ -218,15 +217,13 @@
 .product-amount .amount-wrap .add-product {
     text-align: center;
     width: 90%;
-    height: 37px;
-    line-height: 37px;
     background-color: red;
     font-weight: 600;
     color: white;
     margin-left: 3%;
 }
 /*------------------------------------------------ product-related-wrap */
-.product-related-wrap .related-h4{
+.product-related-wrap .related-h4 {
     margin: 5% 0 0 0;
     background-color: black;
     font-size: 22px;
@@ -237,20 +234,21 @@
     font-weight: 600;
     color: white;
 }
-.product-related-all .product-related{
-    margin-top: 30px;
+.product-related-all .product-related {
+    margin-top: 15px;
+    margin-bottom: 20px;
     border: 1px solid #b1b1b1;
 }
-.product-related-all .product-related .related-shoes{
+.product-related-all .product-related .related-shoes {
     position: relative;
     overflow: hidden;
 }
-.product-related-all .product-related .related-shoes img{
-    border-bottom:1px solid #b1b1b1 ;
+.product-related-all .product-related .related-shoes img {
+    border-bottom: 1px solid #b1b1b1;
     display: block;
     width: 100%;
 }
-.product-related-all .product-related .related-shoes .related-detail{
+.product-related-all .product-related .related-shoes .related-detail {
     position: absolute;
     width: 100%;
     height: 35px;
@@ -261,22 +259,91 @@
     text-align: center;
     line-height: 35px;
     color: white;
-
 }
-.product-related-all .product-related .related-shoes:hover .related-detail{
+.product-related-all .product-related .related-shoes:hover .related-detail {
     left: 0;
 }
-.product-related-all .product-related .related-title-shoes p{
+.product-related-all .product-related .related-title-shoes p {
     margin: 0 auto;
     font-weight: 600;
 }
-.product-related-all .product-related .related-title-shoes:hover p{
+.product-related-all .product-related .related-title-shoes:hover p {
     text-decoration: underline;
 }
-.product-related-all .product-related .related-title-shoes .shoes-pice{
-    color:red ;
+.product-related-all .product-related .related-title-shoes .shoes-pice {
+    color: red;
 }
 /* foodter-wrap */
-.foodter-wrap{
+.foodter-wrap {
     margin-top: 2%;
+}
+@media screen and (max-width: 1800px) {
+    .product-all {
+    }
+    .product-content {
+        display: block;
+    }
+}
+@media screen and (max-width: 1100px) {
+    /* .product-content{
+          display: none;
+      } */
+}
+@media screen and (max-width: 960px) {
+}
+/* ............................modal */
+.modal-body {
+    text-align: center;
+}
+.modal-body .login-form input {
+    padding-left: 13px;
+    width: 50%;
+    height: 56px;
+    margin-bottom: 40px;
+    outline: none;
+}
+.modal-body .login-form1 input {
+    padding-left: 13px;
+    width: 50%;
+    height: 56px;
+    margin-bottom: 40px;
+    outline: none;
+}
+.remember {
+    display: flex;
+}
+.modal-body .login-icon {
+    color: #000;
+    font-size: 30px;
+    text-align: center;
+}
+.remember-span {
+    width: 12px;
+    height: 12px;
+    background-color: #b1b1b1;
+    border: none;
+    border-radius: 50%;
+    margin-top: 3px;
+}
+.modal-body .login-p p{
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    font-size: 15px;
+    color: #868686;
+}
+.modal-body .login {
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 45px;
+    line-height: 45px;
+    width: 50%;
+    margin: 0 auto;
+}
+.modal-body .remember-pass {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin: 0 auto;
 }

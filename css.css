@@ -247,6 +247,7 @@ box-shadow: none;
 .product-all .img-shoes .shoes-product{
     display: block;
     width: 100%;
+    
 }
 .product-all .img-shoes .product-detail{
     position: absolute;
@@ -474,9 +475,11 @@ background: #fff;
   }
 
 /*----------------------------------------------------------------------- footer */
-  .col-2 h3 {
+.foodter-wrap{
+  padding: 0 30px;
+}
+  .foodter-wrap .col-2 h4 {
     color: #000000;
-    margin: 0px 0px 10px;
     font-size: 16px;
   }
   .col-4 h3 {
@@ -498,15 +501,15 @@ background: #fff;
     height: 50px;
   }
   .contact-address {
-    font-size: 16px;
+
   }
   .contact-tel {
     padding-top: 10px;
-    font-size: 16px;
+
   }
   .contact-email {
     padding-top: 10px;
-    font-size: 16px;
+
     padding-bottom: 10px;
   }
   .logobocongthuong {
@@ -562,8 +565,6 @@ background: #fff;
   }
   .img-like-page {
     margin: 0;
-    width: 263px;
-    height: 130px;
     position: absolute;
   }
   .footer-logo-lining {
@@ -729,4 +730,22 @@ background: #fff;
     }
 
     
+  }
+  @media screen and (max-width: 750px) {
+
+    .like-page{
+      display: none;
+    }
+    .onerow {display: none;}
+  }
+  @media screen and (max-width: 360px) {
+    .input-email{
+      display: none;
+    }
+    .copyright{
+      display: none;
+    }
+  }
+  .footer-all{
+    font-size: 15px;
   }

@@ -16,6 +16,9 @@
         crossorigin="anonymous"></script>
     <!-- W3 -->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <!-- FonAwesomee -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
         integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
@@ -292,6 +295,7 @@
             <a href="#" class="w3-bar-item w3-button">Link 2</a>
             <a href="#" class="w3-bar-item w3-button">Link 3</a>
         </div>
+        
         <!-- slideShow -->
         <div class="slideShow container">
             <div class="owl-carousel slideShow-all">
@@ -305,9 +309,9 @@
         </div>
     </header>
     <main>
-        <div class="container main-product">
+        <div class="container main-product d-flex justify-content-between align-items-center">
             <div class="row">
-                <div class="col-lg-8">
+                <div class="col-lg-7 col-md-12">
                     <div class="row">
                         <div class="col-2 small-product">
                             <div>
@@ -333,7 +337,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-5 col-md-6=12">
                     <div class="product-content">
                         <h2>Giày chạy bộ nam ARHR041-3</h2>
                         <p>Thương hiệu: Li-Ning | Mã SP: ARHR041-3</p>
@@ -411,295 +415,342 @@
                                         <div class="amount-duong2"></div>
                                     </button>
                                 </div>
-                                <button type="button" class="add-product" data-toggle="modal"
-                                    data-target=".bd-example-modal-lg">Thêm Giỏ Hàng</button>
+                                <div type="button" class="add-product btn btn-info btn-lg" data-toggle="modal"
+                                    data-target="#myModal">Thêm Giỏ Hàng</div>
                             </div>
                             <p>"Quý khách lưu ý vui lòng chọn đúng size, cỡ, màu trước khi cho vào giỏ hàng.</p>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-
-        <div class="container product-related-wrap">
-            <div class="related-h4">Sản phẩm liên quan</div>
-            <div class="product-related-all">
-                <div class="row">
-                    <div class="col-lg-2 product-related">
-                        <div class="related-shoes">
-                            <img src="./ImgDanne/prd13.jpg" alt="">
-                            <div class="related-detail">Xem Chi Tiết</div>
-                        </div>
-                        <div class="related-title-shoes">
-                            <p>Giày chạy bộ nam</p>
-                            <p class="shoes-pice">1,900,000 Đ</p>
+                <div class="container-fluid product-lienquan">
+                    <div class="container product-related-wrap">
+                        <div class="related-h4">Sản phẩm liên quan</div>
+                        <div class="product-related-all">
+                            <div class="row">
+                                <div class="col-lg-2 col-md-3 col-sm-6 product-related">
+                                    <div class="related-shoes">
+                                        <img src="./ImgDanne/prd13.jpg" alt="">
+                                        <div class="related-detail">Xem Chi Tiết</div>
+                                    </div>
+                                    <div class="related-title-shoes">
+                                        <p>Giày chạy bộ nam</p>
+                                        <p class="shoes-pice">1,900,000 Đ</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-3 col-sm-6 product-related">
+                                    <div class="related-shoes">
+                                        <img src="./ImgDanne/prd13.jpg" alt="">
+                                        <div class="related-detail">Xem Chi Tiết</div>
+                                    </div>
+                                    <div class="related-title-shoes">
+                                        <p>Giày chạy bộ nam</p>
+                                        <p class="shoes-pice">1,900,000 Đ</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-3 col-sm-6 product-related">
+                                    <div class="related-shoes">
+                                        <img src="./ImgDanne/prd13.jpg" alt="">
+                                        <div class="related-detail">Xem Chi Tiết</div>
+                                    </div>
+                                    <div class="related-title-shoes">
+                                        <p>Giày chạy bộ nam</p>
+                                        <p class="shoes-pice">1,900,000 Đ</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-3 col-sm-6 product-related">
+                                    <div class="related-shoes">
+                                        <img src="./ImgDanne/prd13.jpg" alt="">
+                                        <div class="related-detail">Xem Chi Tiết</div>
+                                    </div>
+                                    <div class="related-title-shoes">
+                                        <p>Giày chạy bộ nam</p>
+                                        <p class="shoes-pice">1,900,000 Đ</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-3 col-sm-6 product-related">
+                                    <div class="related-shoes">
+                                        <img src="./ImgDanne/prd13.jpg" alt="">
+                                        <div class="related-detail">Xem Chi Tiết</div>
+                                    </div>
+                                    <div class="related-title-shoes">
+                                        <p>Giày chạy bộ nam</p>
+                                        <p class="shoes-pice">1,900,000 Đ</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-3 col-sm-6 product-related">
+                                    <div class="related-shoes">
+                                        <img src="./ImgDanne/prd13.jpg" alt="">
+                                        <div class="related-detail">Xem Chi Tiết</div>
+                                    </div>
+                                    <div class="related-title-shoes">
+                                        <p>Giày chạy bộ nam</p>
+                                        <p class="shoes-pice">1,900,000 Đ</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-3 col-sm-6 product-related">
+                                    <div class="related-shoes">
+                                        <img src="./ImgDanne/prd13.jpg" alt="">
+                                        <div class="related-detail">Xem Chi Tiết</div>
+                                    </div>
+                                    <div class="related-title-shoes">
+                                        <p>Giày chạy bộ nam</p>
+                                        <p class="shoes-pice">1,900,000 Đ</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-3 col-sm-6 product-related">
+                                    <div class="related-shoes">
+                                        <img src="./ImgDanne/prd13.jpg" alt="">
+                                        <div class="related-detail">Xem Chi Tiết</div>
+                                    </div>
+                                    <div class="related-title-shoes">
+                                        <p>Giày chạy bộ nam</p>
+                                        <p class="shoes-pice">1,900,000 Đ</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-3 col-sm-6 product-related">
+                                    <div class="related-shoes">
+                                        <img src="./ImgDanne/prd13.jpg" alt="">
+                                        <div class="related-detail">Xem Chi Tiết</div>
+                                    </div>
+                                    <div class="related-title-shoes">
+                                        <p>Giày chạy bộ nam</p>
+                                        <p class="shoes-pice">1,900,000 Đ</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-3 col-sm-6 product-related">
+                                    <div class="related-shoes">
+                                        <img src="./ImgDanne/prd13.jpg" alt="">
+                                        <div class="related-detail">Xem Chi Tiết</div>
+                                    </div>
+                                    <div class="related-title-shoes">
+                                        <p>Giày chạy bộ nam</p>
+                                        <p class="shoes-pice">1,900,000 Đ</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-3 col-sm-6 product-related">
+                                    <div class="related-shoes">
+                                        <img src="./ImgDanne/prd13.jpg" alt="">
+                                        <div class="related-detail">Xem Chi Tiết</div>
+                                    </div>
+                                    <div class="related-title-shoes">
+                                        <p>Giày chạy bộ nam</p>
+                                        <p class="shoes-pice">1,900,000 Đ</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-3 col-sm-6 product-related">
+                                    <div class="related-shoes">
+                                        <img src="./ImgDanne/prd13.jpg" alt="">
+                                        <div class="related-detail">Xem Chi Tiết</div>
+                                    </div>
+                                    <div class="related-title-shoes">
+                                        <p>Giày chạy bộ nam</p>
+                                        <p class="shoes-pice">1,900,000 Đ</p>
+                                    </div>
+                                </div>
+            
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-2 product-related">
-                        <div class="related-shoes">
-                            <img src="./ImgDanne/prd13.jpg" alt="">
-                            <div class="related-detail">Xem Chi Tiết</div>
-                        </div>
-                        <div class="related-title-shoes">
-                            <p>Giày chạy bộ nam</p>
-                            <p class="shoes-pice">1,900,000 Đ</p>
+                    <div class="container product-related-wrap">
+                        <div class="related-h4">Sản phẩm liên quan</div>
+                        <div class="product-related-all">
+                            <div class="row">
+                                <div class="col-lg-2 col-md-3 col-sm-6 product-related">
+                                    <div class="related-shoes">
+                                        <img src="./ImgDanne/prd13.jpg" alt="">
+                                        <div class="related-detail">Xem Chi Tiết</div>
+                                    </div>
+                                    <div class="related-title-shoes">
+                                        <p>Giày chạy bộ nam</p>
+                                        <p class="shoes-pice">1,900,000 Đ</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-3 col-sm-6 product-related">
+                                    <div class="related-shoes">
+                                        <img src="./ImgDanne/prd13.jpg" alt="">
+                                        <div class="related-detail">Xem Chi Tiết</div>
+                                    </div>
+                                    <div class="related-title-shoes">
+                                        <p>Giày chạy bộ nam</p>
+                                        <p class="shoes-pice">1,900,000 Đ</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-3 col-sm-6 product-related">
+                                    <div class="related-shoes">
+                                        <img src="./ImgDanne/prd13.jpg" alt="">
+                                        <div class="related-detail">Xem Chi Tiết</div>
+                                    </div>
+                                    <div class="related-title-shoes">
+                                        <p>Giày chạy bộ nam</p>
+                                        <p class="shoes-pice">1,900,000 Đ</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-3 col-sm-6 product-related">
+                                    <div class="related-shoes">
+                                        <img src="./ImgDanne/prd13.jpg" alt="">
+                                        <div class="related-detail">Xem Chi Tiết</div>
+                                    </div>
+                                    <div class="related-title-shoes">
+                                        <p>Giày chạy bộ nam</p>
+                                        <p class="shoes-pice">1,900,000 Đ</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-3 col-sm-6 product-related">
+                                    <div class="related-shoes">
+                                        <img src="./ImgDanne/prd13.jpg" alt="">
+                                        <div class="related-detail">Xem Chi Tiết</div>
+                                    </div>
+                                    <div class="related-title-shoes">
+                                        <p>Giày chạy bộ nam</p>
+                                        <p class="shoes-pice">1,900,000 Đ</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-3 col-sm-6 product-related">
+                                    <div class="related-shoes">
+                                        <img src="./ImgDanne/prd13.jpg" alt="">
+                                        <div class="related-detail">Xem Chi Tiết</div>
+                                    </div>
+                                    <div class="related-title-shoes">
+                                        <p>Giày chạy bộ nam</p>
+                                        <p class="shoes-pice">1,900,000 Đ</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-3 col-sm-6 product-related">
+                                    <div class="related-shoes">
+                                        <img src="./ImgDanne/prd13.jpg" alt="">
+                                        <div class="related-detail">Xem Chi Tiết</div>
+                                    </div>
+                                    <div class="related-title-shoes">
+                                        <p>Giày chạy bộ nam</p>
+                                        <p class="shoes-pice">1,900,000 Đ</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-3 col-sm-6 product-related">
+                                    <div class="related-shoes">
+                                        <img src="./ImgDanne/prd13.jpg" alt="">
+                                        <div class="related-detail">Xem Chi Tiết</div>
+                                    </div>
+                                    <div class="related-title-shoes">
+                                        <p>Giày chạy bộ nam</p>
+                                        <p class="shoes-pice">1,900,000 Đ</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-3 col-sm-6 product-related">
+                                    <div class="related-shoes">
+                                        <img src="./ImgDanne/prd13.jpg" alt="">
+                                        <div class="related-detail">Xem Chi Tiết</div>
+                                    </div>
+                                    <div class="related-title-shoes">
+                                        <p>Giày chạy bộ nam</p>
+                                        <p class="shoes-pice">1,900,000 Đ</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-3 col-sm-6 product-related">
+                                    <div class="related-shoes">
+                                        <img src="./ImgDanne/prd13.jpg" alt="">
+                                        <div class="related-detail">Xem Chi Tiết</div>
+                                    </div>
+                                    <div class="related-title-shoes">
+                                        <p>Giày chạy bộ nam</p>
+                                        <p class="shoes-pice">1,900,000 Đ</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-3 col-sm-6 product-related">
+                                    <div class="related-shoes">
+                                        <img src="./ImgDanne/prd13.jpg" alt="">
+                                        <div class="related-detail">Xem Chi Tiết</div>
+                                    </div>
+                                    <div class="related-title-shoes">
+                                        <p>Giày chạy bộ nam</p>
+                                        <p class="shoes-pice">1,900,000 Đ</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-3 col-sm-6 product-related">
+                                    <div class="related-shoes">
+                                        <img src="./ImgDanne/prd13.jpg" alt="">
+                                        <div class="related-detail">Xem Chi Tiết</div>
+                                    </div>
+                                    <div class="related-title-shoes">
+                                        <p>Giày chạy bộ nam</p>
+                                        <p class="shoes-pice">1,900,000 Đ</p>
+                                    </div>
+                                </div>
+            
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-2 product-related">
-                        <div class="related-shoes">
-                            <img src="./ImgDanne/prd13.jpg" alt="">
-                            <div class="related-detail">Xem Chi Tiết</div>
-                        </div>
-                        <div class="related-title-shoes">
-                            <p>Giày chạy bộ nam</p>
-                            <p class="shoes-pice">1,900,000 Đ</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 product-related">
-                        <div class="related-shoes">
-                            <img src="./ImgDanne/prd13.jpg" alt="">
-                            <div class="related-detail">Xem Chi Tiết</div>
-                        </div>
-                        <div class="related-title-shoes">
-                            <p>Giày chạy bộ nam</p>
-                            <p class="shoes-pice">1,900,000 Đ</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 product-related">
-                        <div class="related-shoes">
-                            <img src="./ImgDanne/prd13.jpg" alt="">
-                            <div class="related-detail">Xem Chi Tiết</div>
-                        </div>
-                        <div class="related-title-shoes">
-                            <p>Giày chạy bộ nam</p>
-                            <p class="shoes-pice">1,900,000 Đ</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 product-related">
-                        <div class="related-shoes">
-                            <img src="./ImgDanne/prd13.jpg" alt="">
-                            <div class="related-detail">Xem Chi Tiết</div>
-                        </div>
-                        <div class="related-title-shoes">
-                            <p>Giày chạy bộ nam</p>
-                            <p class="shoes-pice">1,900,000 Đ</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 product-related">
-                        <div class="related-shoes">
-                            <img src="./ImgDanne/prd13.jpg" alt="">
-                            <div class="related-detail">Xem Chi Tiết</div>
-                        </div>
-                        <div class="related-title-shoes">
-                            <p>Giày chạy bộ nam</p>
-                            <p class="shoes-pice">1,900,000 Đ</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 product-related">
-                        <div class="related-shoes">
-                            <img src="./ImgDanne/prd13.jpg" alt="">
-                            <div class="related-detail">Xem Chi Tiết</div>
-                        </div>
-                        <div class="related-title-shoes">
-                            <p>Giày chạy bộ nam</p>
-                            <p class="shoes-pice">1,900,000 Đ</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 product-related">
-                        <div class="related-shoes">
-                            <img src="./ImgDanne/prd13.jpg" alt="">
-                            <div class="related-detail">Xem Chi Tiết</div>
-                        </div>
-                        <div class="related-title-shoes">
-                            <p>Giày chạy bộ nam</p>
-                            <p class="shoes-pice">1,900,000 Đ</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 product-related">
-                        <div class="related-shoes">
-                            <img src="./ImgDanne/prd13.jpg" alt="">
-                            <div class="related-detail">Xem Chi Tiết</div>
-                        </div>
-                        <div class="related-title-shoes">
-                            <p>Giày chạy bộ nam</p>
-                            <p class="shoes-pice">1,900,000 Đ</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 product-related">
-                        <div class="related-shoes">
-                            <img src="./ImgDanne/prd13.jpg" alt="">
-                            <div class="related-detail">Xem Chi Tiết</div>
-                        </div>
-                        <div class="related-title-shoes">
-                            <p>Giày chạy bộ nam</p>
-                            <p class="shoes-pice">1,900,000 Đ</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 product-related">
-                        <div class="related-shoes">
-                            <img src="./ImgDanne/prd13.jpg" alt="">
-                            <div class="related-detail">Xem Chi Tiết</div>
-                        </div>
-                        <div class="related-title-shoes">
-                            <p>Giày chạy bộ nam</p>
-                            <p class="shoes-pice">1,900,000 Đ</p>
-                        </div>
-                    </div>
-
                 </div>
             </div>
+            
         </div>
 
-        <div class="container product-related-wrap">
-            <div class="related-h4">Sản phẩm liên quan</div>
-            <div class="product-related-all">
-                <div class="row">
-                    <div class="col-lg-2 product-related">
-                        <div class="related-shoes">
-                            <img src="./ImgDanne/prd13.jpg" alt="">
-                            <div class="related-detail">Xem Chi Tiết</div>
-                        </div>
-                        <div class="related-title-shoes">
-                            <p>Giày chạy bộ nam</p>
-                            <p class="shoes-pice">1,900,000 Đ</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 product-related">
-                        <div class="related-shoes">
-                            <img src="./ImgDanne/prd13.jpg" alt="">
-                            <div class="related-detail">Xem Chi Tiết</div>
-                        </div>
-                        <div class="related-title-shoes">
-                            <p>Giày chạy bộ nam</p>
-                            <p class="shoes-pice">1,900,000 Đ</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 product-related">
-                        <div class="related-shoes">
-                            <img src="./ImgDanne/prd13.jpg" alt="">
-                            <div class="related-detail">Xem Chi Tiết</div>
-                        </div>
-                        <div class="related-title-shoes">
-                            <p>Giày chạy bộ nam</p>
-                            <p class="shoes-pice">1,900,000 Đ</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 product-related">
-                        <div class="related-shoes">
-                            <img src="./ImgDanne/prd13.jpg" alt="">
-                            <div class="related-detail">Xem Chi Tiết</div>
-                        </div>
-                        <div class="related-title-shoes">
-                            <p>Giày chạy bộ nam</p>
-                            <p class="shoes-pice">1,900,000 Đ</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 product-related">
-                        <div class="related-shoes">
-                            <img src="./ImgDanne/prd13.jpg" alt="">
-                            <div class="related-detail">Xem Chi Tiết</div>
-                        </div>
-                        <div class="related-title-shoes">
-                            <p>Giày chạy bộ nam</p>
-                            <p class="shoes-pice">1,900,000 Đ</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 product-related">
-                        <div class="related-shoes">
-                            <img src="./ImgDanne/prd13.jpg" alt="">
-                            <div class="related-detail">Xem Chi Tiết</div>
-                        </div>
-                        <div class="related-title-shoes">
-                            <p>Giày chạy bộ nam</p>
-                            <p class="shoes-pice">1,900,000 Đ</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 product-related">
-                        <div class="related-shoes">
-                            <img src="./ImgDanne/prd13.jpg" alt="">
-                            <div class="related-detail">Xem Chi Tiết</div>
-                        </div>
-                        <div class="related-title-shoes">
-                            <p>Giày chạy bộ nam</p>
-                            <p class="shoes-pice">1,900,000 Đ</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 product-related">
-                        <div class="related-shoes">
-                            <img src="./ImgDanne/prd13.jpg" alt="">
-                            <div class="related-detail">Xem Chi Tiết</div>
-                        </div>
-                        <div class="related-title-shoes">
-                            <p>Giày chạy bộ nam</p>
-                            <p class="shoes-pice">1,900,000 Đ</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 product-related">
-                        <div class="related-shoes">
-                            <img src="./ImgDanne/prd13.jpg" alt="">
-                            <div class="related-detail">Xem Chi Tiết</div>
-                        </div>
-                        <div class="related-title-shoes">
-                            <p>Giày chạy bộ nam</p>
-                            <p class="shoes-pice">1,900,000 Đ</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 product-related">
-                        <div class="related-shoes">
-                            <img src="./ImgDanne/prd13.jpg" alt="">
-                            <div class="related-detail">Xem Chi Tiết</div>
-                        </div>
-                        <div class="related-title-shoes">
-                            <p>Giày chạy bộ nam</p>
-                            <p class="shoes-pice">1,900,000 Đ</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 product-related">
-                        <div class="related-shoes">
-                            <img src="./ImgDanne/prd13.jpg" alt="">
-                            <div class="related-detail">Xem Chi Tiết</div>
-                        </div>
-                        <div class="related-title-shoes">
-                            <p>Giày chạy bộ nam</p>
-                            <p class="shoes-pice">1,900,000 Đ</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 product-related">
-                        <div class="related-shoes">
-                            <img src="./ImgDanne/prd13.jpg" alt="">
-                            <div class="related-detail">Xem Chi Tiết</div>
-                        </div>
-                        <div class="related-title-shoes">
-                            <p>Giày chạy bộ nam</p>
-                            <p class="shoes-pice">1,900,000 Đ</p>
-                        </div>
-                    </div>
 
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content ">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="login-icon">
+                            <i class="far fa-user"></i>
+                        </div>
+                        <div class="login-p">
+                            <p>Create an account to expedite future checkouts, track order
+                                <br> history & receive emails,
+                                discounts, & special offers
+                            </p>
+                        </div>
+                        <div class="login-form">
+                            <input type="text" placeholder="username">
+                        </div>
+                        <div class="login-form1">
+                            <input type="password" placeholder="password?">
+                        </div>
+                        <div class="remember-pass">
+                            <div class="remember">
+                                <div class="remember-span"></div>
+                                <p>Remember me</p>
+                            </div>
+                            <div class="pass ">
+                                <p>Lost your password?</p>
+                            </div>
+                        </div>
+                        <div class="login">LOGIN</div>
+                        <div class="spec">
+                            <span>OR</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+          </div>
     </main>
+    
 
     <footer>
-        <div class="container foodter-wrap">
-            <div class="row">
-                <div class="col-4">
-                    <h3>LI NING SPORT VIỆT NAM</h3>
-                    <div class="contact-address">
-                        Địa chỉ: Công ty TNHH Quốc tế Hải Long - Số 19,
-                        Lô 12A Trung Yên 10, KĐT Trung Yên, Trung Hòa,
-                        Cầu Giấy, Hà Nội
+        <div class="container footer-all">
+            <div class="row d-flex">
+                <div class="col-lg-3 col-md-12 order-1">
+                    <div class="foodter-contact" style="margin-top: -10px" >
+                        <h4 style="font-size: 16px;">LI NING SPORT VIỆT NAM</h4>
+                        <div class="contact-address">
+                            Địa chỉ: Công ty TNHH Quốc tế Hải Long - Số 19,
+                            Lô 12A Trung Yên 10, KĐT Trung Yên, Trung Hòa,
+                            Cầu Giấy, Hà Nội
+                        </div>
+                        <div class="contact-tel">
+                            Hotline : 0918401585 (08:00-17:30)
+                        </div>
+                        <div class="contact-email">
+                            Từ thứ 2 đến thứ 6 (thứ 7, chủ nhật, ngày lễ
+                            nghỉ) info.liningvn@gmail.com
+                        </div>
+                        <img class="logobocongthuong" src="img-footer/logobocongthuong.png" alt="logobocongthuong">
                     </div>
-                    <div class="contact-tel">
-                        Hotline : 0918401585 (08:00-17:30)
-                    </div>
-                    <div class="contact-email">
-                        Từ thứ 2 đến thứ 6 (thứ 7, chủ nhật, ngày lễ
-                        nghỉ) info.liningvn@gmail.com
-                    </div>
-                    <img class="logobocongthuong" src="img-footer/logobocongthuong.png" alt="logobocongthuong">
                 </div>
-                <div class="col-2">
+                <div class="col-lg-3 col-4  order-2">
                     <ul class="sales-policy">
                         <h3>CHÍNH SÁCH BÁN HÀNG</h3>
                         <li>
@@ -731,25 +782,26 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-3">
-                    <h3>ĐĂNG KÝ NHẬN TIN</h3>
-                    <p class="sign-up-for">
-                        Mỗi tháng chúng tôi đều có những đợt giảm giá dịch vụ và sản phẩm nhằm tri ân khách hàng. Để có
-                        thể cập nhật kịp thời những đợt giảm giá này, vui lòng nhập địa chỉ email của bạn vào ô dưới
-                        đây.
-                    </p>
-                    <div class="onerow">
-                        <input type="email" class="input-email" placeholder="Nhập địa chỉ email của bạn...">
-                        <button type="submit" class="send">
-                            <i class="fa fa-paper-plane" aria-hidden="true"></i>
-                        </button>
+                <div class="col-lg-3 col-4 order-2">
+                    <div class="foodter-sign-in">
+                        <h3>ĐĂNG KÝ NHẬN TIN</h3>
+                        <p class="sign-up-for">
+                            Mỗi tháng chúng tôi đều có những đợt giảm giá dịch vụ và sản phẩm nhằm tri ân khách hàng. Để có
+                            thể cập nhật kịp thời những đợt giảm giá này, vui lòng nhập địa chỉ email của bạn vào ô dưới
+                            đây.
+                        </p>
+                        <div class="onerow d-flex justify-content-between">
+                            <input type="email" class="input-email col-8" placeholder="Nhập địa chỉ email của bạn...">
+                            <button type="submit" class="send col-4">
+                                <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                            </button>
+                        </div>
                     </div>
-
                 </div>
-                <div class="col-3">
+                <div class="col-lg-3 col-4 order-2">
                     <div class="like-page">
                         <h3>FANPAGE</h3>
-                        <img class="img-like-page" src="img-footer/background1_n.jpg" alt="">
+                        <img class="img-like-page" src="./img-footer/bgrchuanvcl.jpg" alt="">
                         <div class="clearfix">
                             <a class="float" href="https://www.facebook.com/LiningSportVietnam/">
                                 <img class="footer-logo-lining" src="img-footer/footer-logo-lining.png">
@@ -757,7 +809,7 @@
                             <div class="lfloat">
                                 <div class="link-facebook">
                                     <a href="https://www.facebook.com/LiningSportVietnam/">
-                                        Li-Ning Sport Vietnam
+                                        Li-Ning Vietnam
                                     </a>
                                 </div>
                                 <div class="like-page-196">196K lượt thích</div>
@@ -777,10 +829,10 @@
             </div>
         </div>
     </footer>
-    <div class="footer-full">
-        <div class="foodter-wrap container d-flex justify-content-between">
-            <div class="col-lg-4"></div>
-            <div class="col-lg-4 d-flex align-items-center justify-content-center">
+    <div class="footer-full ">
+        <div class="foodter-wrap d-flex justify-content-between">
+            <div class="col-4"></div>
+            <div class="col-4 d-flex align-items-center justify-content-center">
                 <a href="https://www.facebook.com/LiningSportVietnam/">
                     <div class="icon">
                         <i class="fab fa-facebook-f" aria-hidden="true"></i>
@@ -797,7 +849,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-lg-4 d-flex justify-content-end">
+            <div class="col-4 d-flex justify-content-end">
                 <span class="copyright">© 2018 LI-NING</span>
             </div>
         </div>
